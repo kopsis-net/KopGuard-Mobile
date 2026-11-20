@@ -33,7 +33,7 @@ jobs:
         
       - name: Expo paketlerini uyumlu hale getir
         run: |
-          npx expo install --fix --non-interactive
+          npx expo install --fix
           npx expo-doctor@latest
 
       - name: Generate Android project

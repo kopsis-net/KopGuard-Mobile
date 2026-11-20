@@ -23,8 +23,10 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Setup Android SDK
+      - name: Android SDK kurulumu
         uses: android-actions/setup-android@v3
+        with:
+         accept-android-sdk-licenses: false
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Generate Android project
